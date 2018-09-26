@@ -1,7 +1,7 @@
 # message_board
 
 ### 项目说明
-    该项目是一个简单的web留言板。
+    该项目是一个简单基于flask框架的的web留言板。
 
 ### 项目需求
     需求具体内容如下:
@@ -19,11 +19,13 @@
 * 检测提交数据是否正确
 
 ### 项目目录
-* data:
-* static:
-* templates:
-* app.py:
-* README.md:
+* data: 数据存储
+* demo: 存储项目demo
+* static: 静态文件(css\js)
+* templates: 模板文件
+* app.py: 项目入口及主逻辑
+* utils.py: 一些工具函数
+* README.md: 说明文件
 
 ### 其他问题
 * 安全问题: 防止XSS攻击和CSRF漏洞

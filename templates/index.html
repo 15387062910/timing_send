@@ -34,20 +34,15 @@
     <div id="comments" class="comments">
         <h2>留言区:</h2>
         <!-- 若干项留言 -->
-        <div class="comment">
-            <h3>留言主题 - 发布时间 - 发布者</h3>
-            <p>
-                <span>留言内容: </span>
-                just a test
-            </p>
-        </div>
-        <div class="comment">
-            <h3>留言主题 - 发布时间 - 发布者</h3>
-            <p>
-                <span>留言内容: </span>
-                just a test
-            </p>
-        </div>
+        {% for comment in comments %}
+            <div class="comment">
+                <h3>留言主题 - {{ comment.create_time }} - {{ comment.name }}</h3>
+                <p>
+                    <span>留言内容: </span>
+                    {{ comment.content }}
+                </p>
+            </div>
+        {% endfor %}
     </div>
 
 
