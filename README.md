@@ -11,3 +11,12 @@
     3、定时发送
 
 
+### 项目配置
+    自己在项目根目录下建一个private包，里面放settings.py和get.py
+    settings.py: 写项目相关配置
+    get.py: 写接口调用函数
+
+
+### 运行项目
+    安装schedule: pip3 install schedule
+    运行项目根目录下的run.py
